@@ -1,3 +1,4 @@
+// divisible by 5 and 11
 package LAB_01;
 
 import java.util.Scanner;
