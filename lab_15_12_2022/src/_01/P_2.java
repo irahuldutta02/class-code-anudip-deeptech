@@ -1,4 +1,4 @@
-// wap to program to check whether a character is alphabet or number
+// write a program to check whether a character is alphabet or number
 
 package _01;
 

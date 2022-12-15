@@ -1,4 +1,4 @@
-// wap to print hello world 5 times
+// write a program to print hello world 5 times
 package _01;
 
 public class P_1 {
@@ -13,7 +13,5 @@ public class P_1 {
 		for (i=5; i>0;i--) {
 			System.out.println("World");
 		}
-
 	}
-
 }
