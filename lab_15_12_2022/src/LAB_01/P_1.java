@@ -1,5 +1,5 @@
 // write a program to print hello world 5 times
-package _01;
+package LAB_01;
 
 public class P_1 {
 

@@ -1,6 +1,6 @@
 // write a program to check whether a character is alphabet or number
 
-package _01;
+package LAB_01;
 
 import java.util.Scanner;
 

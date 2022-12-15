@@ -1,5 +1,5 @@
 //write a program to print multiplication table
-package _01;
+package LAB_01;
 
 import java.util.Scanner;
 

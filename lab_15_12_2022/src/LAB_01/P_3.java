@@ -1,5 +1,5 @@
 // vowel or consonant
-package _01;
+package LAB_01;
 
 public class P_3 {
 	public static void main(String[] args) {
