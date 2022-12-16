@@ -2,7 +2,6 @@
 package LAB_01;
 
 public class P_01 {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		for(int i=5;i>=0;i--){
@@ -11,7 +10,5 @@ public class P_01 {
 		    }
 		    System.out.println("");
 		}
-
 	}
-
 }
