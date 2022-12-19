@@ -1,15 +1,14 @@
 package class_19_12_2022;
-
+// Banking System
 import java.util.Scanner;
 
 public class BankTransaction {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int bal = 10000;
 		try (Scanner sc = new Scanner(System.in)) {
 		while(true) {
-				System.out.print("1. Blance, 2. Withdraw, 3. Diposit, 4. Exit : ");
+				System.out.print("Select 1 for Blance Enquary, 2 for Withdraw, 3 for Diposit or 4 to Exit : ");
 				char c = sc.next().charAt(0);
 				if (c == '4') {
 					System.out.println("Exiting the banking system...");
