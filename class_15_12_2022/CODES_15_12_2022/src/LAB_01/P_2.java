@@ -9,6 +9,7 @@ public class P_2 {
 	public static void main(String[] args) {
 		try (// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in)) {
+			System.out.print("Input : ");
 			char c= sc.next().charAt(0);
 			
 			if(c>='a' && c<='z') {
