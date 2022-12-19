@@ -5,22 +5,17 @@ public class Calculator
 {
 	public static void main(String args[])
 	{
-		// declare here
 		float a,b,res;
 		char choice;
 		try (Scanner S = new Scanner(System.in)) {
 			do
 			{
-				// prepare menu for the user to see multiple operations.
 				System.out.println("\n\nMain Menu : \n1.Addition\n2.Subtraction\n3.Division\n4.Multiplication\n5.Modulo\n6.Exit");
 				
-				// enter the choice
 				System.out.print("Enter your choice : ");
 				
-				// read the input choice value.
 				choice=S.next().charAt(0);
 				
-				// this loop will calculate different the operations value at different different values.
 				switch(choice)
 				{ 
 				    case '1':System.out.print("Enter two numbers : ");
@@ -64,7 +59,6 @@ public class Calculator
 					 break;
 				}
 			}
-			// loop works till the number 5 not selected.
   while(choice!=5);
 		}
 	}
