@@ -4,4 +4,4 @@
 
 ## 2. Serializable interface or its subinterface, java
 
-## 3. 
+## 3. INHERITANCE
