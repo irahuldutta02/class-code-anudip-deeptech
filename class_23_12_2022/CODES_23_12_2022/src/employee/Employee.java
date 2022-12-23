@@ -37,6 +37,8 @@ public class Employee {
 }
 
 class Manager extends Employee{
+	
+	final String employeeType = "Manager";
 
 	public Manager(long employeeId, String employeeName, String employeeAddress, long employeePhone, double salary) {
 		super(employeeId, employeeName, employeeAddress, employeePhone);
@@ -50,6 +52,7 @@ class Manager extends Employee{
 }
 
 class Trainee extends Employee{
+	final String employeeType = "Trainee";
 
 	public Trainee(long employeeId, String employeeName, String employeeAddress, long employeePhone, double salary) {
 		super(employeeId, employeeName, employeeAddress, employeePhone);
