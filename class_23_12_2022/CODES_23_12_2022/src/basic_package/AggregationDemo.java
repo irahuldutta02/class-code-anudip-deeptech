@@ -35,7 +35,6 @@ class Company{
 public class AggregationDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Address address1 = new Address("Kolkata", "West Bengal", "India", 700001);
 		Address address2 = new Address("New york city", "New york", "USA", 100001);
 		
@@ -46,6 +45,8 @@ public class AggregationDemo {
 		
 		System.out.println("1st Company name: "+ company1.getName());
 		System.out.println("Address: "+ company1.getAddress().city);
+		
+		System.out.println();
 		
 		System.out.println("2nd Company name: "+ company2.getName());
 		System.out.println("Address: "+ company2.getAddress().city);
