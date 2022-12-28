@@ -1,5 +1,3 @@
 # ANUDIP DEEPTECH CLASS 11 (27-12-2022) - SHAWIN PRADHAN SIR - CLASS SUMMARY
 
 ## 1. Interface in java
-
-## 2. 
