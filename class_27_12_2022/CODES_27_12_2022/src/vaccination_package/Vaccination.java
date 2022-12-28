@@ -1,24 +1,28 @@
 package vaccination_package;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 abstract class Vaccine {
-	Scanner sc = new Scanner(System.in);
+	BufferedReader sc = new BufferedReader(new InputStreamReader(System.in)); 
+	Scanner sc2 =new Scanner(System.in);
 	String citizen, name;
 	int age, price;
 
-	public void firstDose() {
-		System.out.println("Name: ");
-		name = sc.nextLine();
+	public void firstDose() throws IOException {
+		System.out.println("Name: ");	
+		name = sc.readLine();
 		System.out.println("Citizenship: ");
-		citizen = sc.nextLine();
+		citizen = sc.readLine();
 
 		if (citizen.equalsIgnoreCase("Indian")) {
 			System.out.println("AGE: ");
-			age = sc.nextInt();
+			age = sc2.nextInt();
 			if (age >= 18) {
 				System.out.println("Enter the price: ");
-				price = sc.nextInt();
+				price = sc2.nextInt();
 				if (price == 250) {
 					System.out.println("First dose vaccinated succesfully.");
 				} else {
@@ -33,25 +37,24 @@ abstract class Vaccine {
 		}
 	}
 
-	public void secendDose() {
+	public void secendDose() throws IOException {
 		System.out.println("First does done: y/n");
-		char c = sc.next().charAt(0);
+		char c = sc2.next().charAt(0);
 		if ((c == 'y') || (c == 'Y')) {
 			System.out.println("Has it been 90 days since your first dose.");
-			c = sc.next().charAt(0);
+			c = sc2.next().charAt(0);
 			if ((c == 'y') || (c == 'Y')) {
-				sc.nextLine();
 				System.out.println("Name: ");
-				name = sc.nextLine();
+				name = sc.readLine();
 				System.out.println("Citizenship: ");
-				citizen = sc.nextLine();
+				citizen = sc.readLine();
 
 				if (citizen.equalsIgnoreCase("Indian")) {
 					System.out.println("AGE: ");
-					age = sc.nextInt();
+					age = sc2.nextInt();
 					if (age >= 18) {
 						System.out.println("Enter the price: ");
-						price = sc.nextInt();
+						price = sc2.nextInt();
 						if (price == 250) {
 							System.out.println("Second dose vaccinated succesfully.");
 						} else {
@@ -83,23 +86,33 @@ class VaccinationSuccess extends Vaccine {
 	public void booster() {
 
 		System.out.println("First does and Second both done? : y/n");
-		char c = sc.next().charAt(0);
+		char c = sc2.next().charAt(0);
 		if ((c == 'y') || (c == 'Y')) {
 			System.out.println("Has it been 180 days since your Second dose.");
-			c = sc.next().charAt(0);
+			c = sc2.next().charAt(0);
 			if ((c == 'y') || (c == 'Y')) {
-				sc.nextLine();
+//				sc.nextLine();
 				System.out.println("Name: ");
-				name = sc.nextLine();
+				try {
+					name = sc.readLine();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				System.out.println("Citizenship: ");
-				citizen = sc.nextLine();
+				try {
+					citizen = sc.readLine();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 
 				if (citizen.equalsIgnoreCase("Indian")) {
 					System.out.println("AGE: ");
-					age = sc.nextInt();
+					age = sc2.nextInt();
 					if (age >= 18) {
 						System.out.println("Enter the price: ");
-						price = sc.nextInt();
+						price = sc2.nextInt();
 						if (price == 250) {
 							System.out.println("Booster dose vaccinated succesfully.");
 						} else {
@@ -126,7 +139,7 @@ class VaccinationSuccess extends Vaccine {
 
 public class Vaccination {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
 		VaccinationSuccess vac = new VaccinationSuccess();
 
@@ -152,7 +165,7 @@ public class Vaccination {
 			}
 			case 4: {
 				System.out.println("System exited.");
-				break;
+				System.exit(0);
 			}
 			default: {
 				System.out.println("Invalid input try again!");
