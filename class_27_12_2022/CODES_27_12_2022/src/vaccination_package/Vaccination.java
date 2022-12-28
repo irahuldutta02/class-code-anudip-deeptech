@@ -91,7 +91,6 @@ class VaccinationSuccess extends Vaccine {
 			System.out.println("Has it been 180 days since your Second dose.");
 			c = sc2.next().charAt(0);
 			if ((c == 'y') || (c == 'Y')) {
-//				sc.nextLine();
 				System.out.println("Name: ");
 				try {
 					name = sc.readLine();
@@ -172,9 +171,8 @@ public class Vaccination {
 			}
 
 			}
-
 		} while (true);
-
 	}
+	
 
 }
