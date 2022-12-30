@@ -33,7 +33,7 @@ public class duplicateElement {
 			if (freq[i] == 0) {
 				continue;
 			}else {
-				System.out.println("In the array "+ i + " is "+freq[i] +" times.");
+				System.out.println("In the array "+ i + " is "+(freq[i]+1) +" times.");
 			}
 		}	
 		
