@@ -35,13 +35,8 @@ public class duplicateElement {
 			}else {
 				System.out.println("In the array "+ i + " is "+freq[i] +" times.");
 			}
-		}
+		}	
 		
-//		System.out.println("Number :");
-//
-//		int c =sc.nextInt();
-//		
-//		System.out.println("Frequancy of "+ c + " is "+ (freq[c]+1));
 		
 		
 	}
