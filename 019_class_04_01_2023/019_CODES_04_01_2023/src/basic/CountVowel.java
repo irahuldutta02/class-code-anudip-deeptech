@@ -22,7 +22,7 @@ public class CountVowel {
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("String : ");
 		String str = sc.nextLine();
-		System.out.println("Total no of vowels in string are: " + count(str));
+		System.out.println("Total no of vowels in that string is: " + count(str));
 	}
 
 }
