@@ -1,5 +1,0 @@
-# ANUDIP DEEPTECH CLASS 12 (28-12-2022) - SHAWIN PRADHAN SIR - CLASS SUMMARY
-
-## 1. Arrays
-
-## 2. Problems on Arrays
