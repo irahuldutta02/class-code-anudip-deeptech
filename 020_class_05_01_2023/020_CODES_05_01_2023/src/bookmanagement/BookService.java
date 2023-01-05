@@ -81,4 +81,28 @@ public class BookService {
 			System.out.println("===========================================");
 		}
 	}
+	
+	public void getBookdetailsbyAuthor() {
+		boolean flag2 = false;
+		System.out.println("Enter Author name : ");
+		sc.nextLine();
+		String author = sc.nextLine();
+		for(int i =0;i<index;i++) {
+			if(author.equals(book[i].getAuthor())) {
+				System.out.println("===========================================");
+				System.out.println(("Book ID : ") + book[i].getBookId());
+				System.out.println(("Book ID : ") + book[i].getBookName());
+				System.out.println(("Book ID : ") + book[i].getAuthor());
+				System.out.println(("Book ID : ") + book[i].getBookPrice());
+				System.out.println("===========================================");
+				flag2 =true;
+			}
+		}
+		if (flag2 == false) {
+			System.out.println("Invalid Author. try again");
+			System.out.println("===========================================");
+		}
+		
+	}
+	
 }

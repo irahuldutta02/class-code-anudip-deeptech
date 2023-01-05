@@ -12,7 +12,7 @@ public class BookMain {
 		do {
 			System.out.println("Welcome to Book management System.");
 			System.out.println("1) Create Book Details.\n" + "2) Get book details by ID.\n"
-					+ "3) Get all book details\n" + "4) Get book details by name\n" + "5) Exit");
+					+ "3) Get all book details\n" + "4) Get book details by name\n"+ "5) Get book Details by author name.\n" + "6) Exit");
 			System.out.println("===========================================");
 			System.out.println("Input : ");
 			ch = sc.nextInt();
@@ -38,7 +38,13 @@ public class BookMain {
 				System.out.println();
 				break;
 			}
-			case 5: {
+			case 5:{
+				bService.getBookdetailsbyAuthor();
+				System.out.println();
+				break;
+			}
+
+			case 6: {
 				System.out.println("Thank you.");
 				System.exit(0);
 			}
@@ -47,7 +53,7 @@ public class BookMain {
 			}
 			}
 
-		} while (ch != 5);
+		} while (ch != 6);
 	}
 
 }
