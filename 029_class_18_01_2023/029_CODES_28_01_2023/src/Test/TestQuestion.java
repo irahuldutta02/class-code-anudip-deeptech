@@ -37,4 +37,6 @@ System.out.println ("After traversal through an iterator:"+mylist);
 
 }
 
+
+
 }
